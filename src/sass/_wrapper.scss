@@ -1,0 +1,16 @@
+.wrapper {
+  margin: 0 auto;
+  width: 940px;
+
+  @include secondLarger {
+    width: 100%;
+  }
+
+  @include thirdLarger {
+    width: 100%;
+  }
+
+  @include fourthLarger {
+    width: 100%;
+  }
+}

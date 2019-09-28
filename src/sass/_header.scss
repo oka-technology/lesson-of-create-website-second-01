@@ -1,0 +1,102 @@
+.header {
+  margin-top: 2.5rem;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem;
+
+    @include fourthLarger {
+      flex-direction: column;
+      margin: 0 auto;
+      width: max-content;
+    }
+
+    &__title {
+      color: $midBlue;
+
+      @include fourthLarger {
+      text-align: center;
+      }
+
+      &__main {
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 2.4rem;
+        margin: 0;
+      }
+
+      &__sub {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        margin-top: 0.5rem;
+      }
+    }
+
+    &__list {
+      align-items: baseline;
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      margin: 0;
+      font-size: 1.3rem;
+
+      @include fourthLarger {
+        margin-top: 1.5rem;
+      }
+
+      &__term {
+        text-align: right;
+
+        &::after {
+          content: ":"
+        }
+      }
+
+      &__description {
+        margin-left: 0.5rem;
+        
+        &--bold {
+          font-size: 2rem;
+          font-weight: bold;
+          line-height: 1;
+        }
+      }
+    }
+  }
+  &__nav {
+    display: grid;
+    font-size: 1.2rem;
+    font-weight: bold;
+    gap: 0.1rem;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 2.5rem;
+    width: 100%;
+
+    @include secondLarger {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include thirdLarger {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include fourthLarger {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__anchor {
+      background-color: $midBlue;
+      color: #fff;
+      display: block;
+      height: 6rem;
+      line-height: 1.6rem;
+      padding: 0.8rem 0 0 1rem;
+
+      &--here {
+        background-color: $lightBlue;
+      }
+    }
+  }
+
+  
+}

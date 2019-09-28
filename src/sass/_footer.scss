@@ -1,0 +1,52 @@
+.footer {
+  font-size: 1.2rem;
+  margin-top: 8rem;
+
+  &__linkList {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+
+    @include secondLarger {
+      justify-content: center;
+    }
+
+    @include thirdLarger {
+      justify-content: center;
+    }
+
+    @include fourthLarger {
+      justify-content: center;
+    }
+
+    &__item {
+
+      & + & {
+        margin-left: 1.5rem;
+      }
+
+      &__anchor {
+        color: $midBlue;
+      }
+    }
+  }
+
+  &__copyright {
+    display: block;
+    font-size: 100%;
+    margin: 2rem 0;
+
+    @include secondLarger {
+      text-align: center;
+    }
+
+    @include thirdLarger {
+      text-align: center;
+    }
+
+    @include fourthLarger {
+      text-align: center;
+    }
+  }
+}

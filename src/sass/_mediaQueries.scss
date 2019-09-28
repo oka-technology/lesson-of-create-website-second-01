@@ -3,7 +3,7 @@ $breakpointSecond: 640px;
 $breakpointThird: 480px;
 
 @mixin secondLarger {
-  @media screen and (max-width: $breakpointFirst and (min-width: $breakpointSecond + 1)) {
+  @media screen and (max-width: $breakpointFirst) and (min-width: $breakpointSecond + 1) {
     @content;
   }
 }
