@@ -1,1 +1,1 @@
-# static-html-template
+# lesson-of-create-website-second-01
